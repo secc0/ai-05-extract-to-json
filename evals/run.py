@@ -13,6 +13,7 @@ import argparse
 import json
 import os
 import sys
+import time
 from dataclasses import asdict, dataclass, replace
 from datetime import date
 from pathlib import Path
@@ -35,6 +36,7 @@ from order_extractor.schema import Order, OrderData
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_CASES = Path(__file__).with_name("cases.yaml")
 EXAMPLES = ROOT / "examples"
+EVAL_RETRY = {"max_attempts": 6, "base_delay": 10.0, "max_delay": 60.0}
 
 
 @dataclass(frozen=True)
@@ -158,11 +160,18 @@ def main(argv: list[str] | None = None) -> int:
         default=0.8,
         help="exit 1 if the mean per-field accuracy is below this (0-1)",
     )
+    parser.add_argument(
+        "--delay",
+        type=float,
+        default=6.0,
+        help="seconds to wait between emails, to stay under free-model rate limits",
+    )
     args = parser.parse_args(argv)
 
     config = load_config(args.cases)
     try:
-        client = eval_client()
+        # Patient transport retries (llm-kit's own Retrier): free models answer 429 often.
+        client = eval_client(**EVAL_RETRY)
     except ConfigError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
@@ -170,9 +179,12 @@ def main(argv: list[str] | None = None) -> int:
     ids = config["smoke"] if args.smoke else config["cases"]
     today = config["reference_date"]
     results = []
-    for case_id in ids:
+    for n, case_id in enumerate(ids):
+        if n and args.delay > 0:
+            time.sleep(args.delay)
         result = run_case(case_id, client, today)
-        print(f"  {case_id}: {'ok' if result.score.exact else 'diff'}", file=sys.stderr)
+        status = "ok" if result.score.exact else ("error" if result.error else "diff")
+        print(f"  {case_id}: {status}", file=sys.stderr, flush=True)
         results.append(result)
 
     summary = summarize_results(results)
