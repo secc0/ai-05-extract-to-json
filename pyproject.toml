@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-05-extract-to-json"
+version = "0.1.0"
+description = "Turn free-text Portuguese order emails into Pydantic-validated JSON."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+    "llm-kit @ git+https://github.com/secc0/ai-03-llm-kit.git@v0.1",
+    "pydantic>=2",
+    "pyyaml>=6.0.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
+
+[project.scripts]
+extract-order = "order_extractor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
