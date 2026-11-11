@@ -1,0 +1,679 @@
+{
+  "model": "nvidia/nemotron-3.5-lightning:free",
+  "reference_date": "2026-11-11",
+  "summary": {
+    "field_accuracy": {
+      "customer_name": 0.9,
+      "item_name": 0.918918918918919,
+      "item_quantity": 0.918918918918919,
+      "item_unit_price": 0.918918918918919,
+      "delivery_date": 1.0,
+      "address": 0.95
+    },
+    "exact_match_rate": 0.75,
+    "mean_attempts": 1.0,
+    "mean_conf_correct": 0.9231081081081082,
+    "mean_conf_incorrect": 0.9183333333333333,
+    "n_emails": 20,
+    "n_failed": 0
+  },
+  "cases": [
+    {
+      "id": "01",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Helena Prado Vasconcelos",
+        "items": [
+          {
+            "name": "bolo de chocolate com morango",
+            "quantity": 1,
+            "unit_price": 85.0
+          }
+        ],
+        "delivery_date": "2026-11-13",
+        "address": "Rua das Acácias, 128, apto 32, Vila Mariana, São Paulo",
+        "notes": null,
+        "confianca": {
+          "customer_name": 0.98,
+          "items": 0.88,
+          "delivery_date": 0.95,
+          "address": 0.98,
+          "notes": 0.95
+        },
+        "confianca_geral": 0.93
+      }
+    },
+    {
+      "id": "02",
+      "attempts": 1,
+      "exact": false,
+      "wrong_fields": [
+        "customer_name"
+      ],
+      "error": null,
+      "order": {
+        "customer_name": "Duda",
+        "items": [
+          {
+            "name": "pizza de calabresa",
+            "quantity": 2,
+            "unit_price": 42.0
+          },
+          {
+            "name": "pizza de quatro queijos",
+            "quantity": 1,
+            "unit_price": 48.0
+          }
+        ],
+        "delivery_date": "2026-11-12",
+        "address": "Av. Brasil 1500, casa 2, Centro, Campinas",
+        "notes": null,
+        "confianca": {
+          "customer_name": 0.98,
+          "items": 0.95,
+          "delivery_date": 0.95,
+          "address": 0.95,
+          "notes": 0.9
+        },
+        "confianca_geral": 0.95
+      }
+    },
+    {
+      "id": "03",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Rodrigo Tavares",
+        "items": [
+          {
+            "name": "salgadinhos de coxinha",
+            "quantity": 30,
+            "unit_price": null
+          },
+          {
+            "name": "kibe",
+            "quantity": 30,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": "2026-11-20",
+        "address": "Rua Jacarandá 77, bairo Jardim Paulista, Ribeirão Preto",
+        "notes": "mandar guardanapo junto",
+        "confianca": {
+          "customer_name": 1.0,
+          "items": 1.0,
+          "delivery_date": 0.95,
+          "address": 0.95,
+          "notes": 0.8
+        },
+        "confianca_geral": 0.94
+      }
+    },
+    {
+      "id": "04",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Patrícia Gomes",
+        "items": [
+          {
+            "name": "pão de fermentação natural",
+            "quantity": 3,
+            "unit_price": null
+          },
+          {
+            "name": "torta de limão",
+            "quantity": 1,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": "2026-11-14",
+        "address": null,
+        "notes": null,
+        "confianca": {
+          "customer_name": 1.0,
+          "items": 1.0,
+          "delivery_date": 1.0,
+          "address": 1.0,
+          "notes": 1.0
+        },
+        "confianca_geral": 1.0
+      }
+    },
+    {
+      "id": "05",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Caio Mendonça",
+        "items": [
+          {
+            "name": "brigadeiro gourmet",
+            "quantity": 4,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": null,
+        "address": "Travessa dos Ipês, 9 - Boa Vista, Recife/PE.",
+        "notes": "ainda não sei o dia certinho, depois confirmo.",
+        "confianca": {
+          "customer_name": 0.98,
+          "items": 0.95,
+          "delivery_date": 0.6,
+          "address": 0.95,
+          "notes": 0.8
+        },
+        "confianca_geral": 0.75
+      }
+    },
+    {
+      "id": "06",
+      "attempts": 1,
+      "exact": false,
+      "wrong_fields": [
+        "customer_name"
+      ],
+      "error": null,
+      "order": {
+        "customer_name": "Café Aurora Ltda.",
+        "items": [
+          {
+            "name": "café torrado 500 g",
+            "quantity": 10,
+            "unit_price": 24.9
+          },
+          {
+            "name": "filtro de papel 103",
+            "quantity": 5,
+            "unit_price": 6.5
+          },
+          {
+            "name": "açúcar em sachê",
+            "quantity": 2,
+            "unit_price": 58.0
+          }
+        ],
+        "delivery_date": "2026-11-25",
+        "address": "Av. Paulista, 2200, 4º andar, Bela Vista, São Paulo - SP",
+        "notes": null,
+        "confianca": {
+          "customer_name": 0.95,
+          "items": 0.98,
+          "delivery_date": 0.95,
+          "address": 0.95,
+          "notes": 0.9
+        },
+        "confianca_geral": 0.94
+      }
+    },
+    {
+      "id": "07",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Lúcia Ferraz",
+        "items": [
+          {
+            "name": "pão de queijo",
+            "quantity": 12,
+            "unit_price": null
+          },
+          {
+            "name": "sonhos",
+            "quantity": 6,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": "2026-11-12",
+        "address": "Rua Ametista, 45, Jardim das Pedras, Belo Horizonte",
+        "notes": null,
+        "confianca": {
+          "customer_name": 0.95,
+          "items": 0.9,
+          "delivery_date": 0.95,
+          "address": 0.95,
+          "notes": 0.8
+        },
+        "confianca_geral": 0.91
+      }
+    },
+    {
+      "id": "08",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Fábio Nogueira",
+        "items": [
+          {
+            "name": "marmita fit de frango com batata doce",
+            "quantity": 3,
+            "unit_price": null
+          },
+          {
+            "name": "marmita de carne com arroz integral",
+            "quantity": 3,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": "2026-11-16",
+        "address": "Rua Coronel Batista, 310, Fundos, Centro, Curitiba",
+        "notes": null,
+        "confianca": {
+          "customer_name": 1.0,
+          "items": 0.95,
+          "delivery_date": 0.95,
+          "address": 0.95,
+          "notes": 0.85
+        },
+        "confianca_geral": 0.94
+      }
+    },
+    {
+      "id": "09",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Bianca Rocha",
+        "items": [
+          {
+            "name": "orquídea branca",
+            "quantity": 2,
+            "unit_price": null
+          },
+          {
+            "name": "kit de adubo",
+            "quantity": 1,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": null,
+        "address": "Rua dos Girassóis 501, Jardim Botânico, Porto Alegre",
+        "notes": null,
+        "confianca": {
+          "customer_name": 0.98,
+          "items": 0.97,
+          "delivery_date": 0.15,
+          "address": 0.96,
+          "notes": 0.95
+        },
+        "confianca_geral": 0.8
+      }
+    },
+    {
+      "id": "10",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Gustavo Henrique Ribas",
+        "items": [
+          {
+            "name": "suco de uva integral",
+            "quantity": 6,
+            "unit_price": 18.0
+          }
+        ],
+        "delivery_date": "2026-11-13",
+        "address": "Alameda Santos, 88, casa 3, Vila Nova, Campinas",
+        "notes": "Por favor, tocar o interfone 3.",
+        "confianca": {
+          "customer_name": 0.95,
+          "items": 0.95,
+          "delivery_date": 0.95,
+          "address": 0.95,
+          "notes": 0.95
+        },
+        "confianca_geral": 0.95
+      }
+    },
+    {
+      "id": "11",
+      "attempts": 1,
+      "exact": false,
+      "wrong_fields": [
+        "item_name",
+        "item_quantity",
+        "item_unit_price"
+      ],
+      "error": null,
+      "order": {
+        "customer_name": "Neide Alcantara",
+        "items": [
+          {
+            "name": "bolo de cenora",
+            "quantity": 1,
+            "unit_price": null
+          },
+          {
+            "name": "brigadeiros",
+            "quantity": 20,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": "2026-11-16",
+        "address": "rua das palmeras 23 bairo sao jose florianopolis",
+        "notes": null,
+        "confianca": {
+          "customer_name": 1.0,
+          "items": 0.85,
+          "delivery_date": 0.95,
+          "address": 0.8,
+          "notes": 1.0
+        },
+        "confianca_geral": 0.92
+      }
+    },
+    {
+      "id": "12",
+      "attempts": 1,
+      "exact": false,
+      "wrong_fields": [
+        "item_name",
+        "item_quantity",
+        "item_unit_price",
+        "address"
+      ],
+      "error": null,
+      "order": {
+        "customer_name": "Sônia Martins Barreto",
+        "items": [
+          {
+            "name": "kits de lanche",
+            "quantity": 50,
+            "unit_price": 16.0
+          }
+        ],
+        "delivery_date": "2026-12-05",
+        "address": "Rua Professor Lima, 400, Santa Cruz, Niterói",
+        "notes": null,
+        "confianca": {
+          "customer_name": 0.95,
+          "items": 0.9,
+          "delivery_date": 0.95,
+          "address": 0.98,
+          "notes": 1.0
+        },
+        "confianca_geral": 0.95
+      }
+    },
+    {
+      "id": "13",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Tiago",
+        "items": [
+          {
+            "name": "ração de 1kg pro gato",
+            "quantity": 2,
+            "unit_price": null
+          },
+          {
+            "name": "areia higiênica",
+            "quantity": 1,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": null,
+        "address": "rua Guaraná 12 ap 101, Itapuã, Salvador",
+        "notes": "sem pressa",
+        "confianca": {
+          "customer_name": 1.0,
+          "items": 0.95,
+          "delivery_date": 0.1,
+          "address": 0.95,
+          "notes": 0.8
+        },
+        "confianca_geral": 0.76
+      }
+    },
+    {
+      "id": "14",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Renata Siqueira",
+        "items": [
+          {
+            "name": "hambúrguer artesanal",
+            "quantity": 2,
+            "unit_price": null
+          },
+          {
+            "name": "porção de batata frita grande",
+            "quantity": 1,
+            "unit_price": null
+          },
+          {
+            "name": "refrigerante lata",
+            "quantity": 2,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": "2026-11-14",
+        "address": "Rua Marechal Deodoro, 1020, bloco B, apto 14, Centro, Juiz de Fora",
+        "notes": "Um dos hambúrgueres é para criança, por favor cortar ao meio. Embalar separado.",
+        "confianca": {
+          "customer_name": 0.98,
+          "items": 0.95,
+          "delivery_date": 0.95,
+          "address": 0.98,
+          "notes": 0.95
+        },
+        "confianca_geral": 0.95
+      }
+    },
+    {
+      "id": "15",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "André Moura",
+        "items": [
+          {
+            "name": "empadas de palmito",
+            "quantity": 8,
+            "unit_price": 7.0
+          }
+        ],
+        "delivery_date": "2026-11-12",
+        "address": "Rua Bela Cintra, 640, Consolação, São Paulo",
+        "notes": null,
+        "confianca": {
+          "customer_name": 0.95,
+          "items": 0.95,
+          "delivery_date": 0.9,
+          "address": 0.95,
+          "notes": 0.9
+        },
+        "confianca_geral": 0.93
+      }
+    },
+    {
+      "id": "16",
+      "attempts": 1,
+      "exact": false,
+      "wrong_fields": [
+        "item_name",
+        "item_quantity",
+        "item_unit_price"
+      ],
+      "error": null,
+      "order": {
+        "customer_name": "Larissa Duarte",
+        "items": [
+          {
+            "name": "geleia de morango",
+            "quantity": 5,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": "2026-11-18",
+        "address": "Rua Alfredo Lopes, 55, Santa Felicidade, Curitiba",
+        "notes": null,
+        "confianca": {
+          "customer_name": 0.99,
+          "items": 0.85,
+          "delivery_date": 0.95,
+          "address": 0.95,
+          "notes": 0.98
+        },
+        "confianca_geral": 0.93
+      }
+    },
+    {
+      "id": "17",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Camila Freitas",
+        "items": [
+          {
+            "name": "cupcakes de baunilha",
+            "quantity": 12,
+            "unit_price": 4.5
+          },
+          {
+            "name": "red velvet",
+            "quantity": 12,
+            "unit_price": 5.5
+          }
+        ],
+        "delivery_date": "2026-11-28",
+        "address": "Rua Harmonia, 300, Sumarezinho, São Paulo",
+        "notes": "Aniversário, por favor colocar uma vela",
+        "confianca": {
+          "customer_name": 0.98,
+          "items": 0.97,
+          "delivery_date": 0.97,
+          "address": 0.97,
+          "notes": 0.93
+        },
+        "confianca_geral": 0.94
+      }
+    },
+    {
+      "id": "18",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Edson Barros",
+        "items": [
+          {
+            "name": "garrafão de água de 20 litros",
+            "quantity": 4,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": "2026-11-11",
+        "address": "Rua Siqueira Campos, 1450, sala 12, Centro, Fortaleza.",
+        "notes": "Pagamento na entrega",
+        "confianca": {
+          "customer_name": 1.0,
+          "items": 1.0,
+          "delivery_date": 1.0,
+          "address": 1.0,
+          "notes": 1.0
+        },
+        "confianca_geral": 1.0
+      }
+    },
+    {
+      "id": "19",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Rafael Antunes Costa",
+        "items": [
+          {
+            "name": "buquê de rosas vermelhas",
+            "quantity": 1,
+            "unit_price": null
+          },
+          {
+            "name": "cartão",
+            "quantity": 1,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": null,
+        "address": null,
+        "notes": null,
+        "confianca": {
+          "customer_name": 1.0,
+          "items": 0.95,
+          "delivery_date": 0.3,
+          "address": 0.9,
+          "notes": 0.8
+        },
+        "confianca_geral": 0.79
+      }
+    },
+    {
+      "id": "20",
+      "attempts": 1,
+      "exact": true,
+      "wrong_fields": [],
+      "error": null,
+      "order": {
+        "customer_name": "Joaquim Peixoto",
+        "items": [
+          {
+            "name": "torta salgada de frango",
+            "quantity": 2,
+            "unit_price": null
+          },
+          {
+            "name": "quiche de alho-poró",
+            "quantity": 3,
+            "unit_price": null
+          },
+          {
+            "name": "salada de frutas grande",
+            "quantity": 1,
+            "unit_price": null
+          }
+        ],
+        "delivery_date": "2026-11-13",
+        "address": "Estrada do Capão, km 3, Sítio Boa Esperança, zona rural de Atibaia",
+        "notes": "Chegando no portão é só ligar que eu abro.",
+        "confianca": {
+          "customer_name": 0.98,
+          "items": 0.97,
+          "delivery_date": 0.96,
+          "address": 0.85,
+          "notes": 0.92
+        },
+        "confianca_geral": 0.92
+      }
+    }
+  ]
+}
