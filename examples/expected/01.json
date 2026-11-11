@@ -1,0 +1,13 @@
+{
+  "customer_name": "Helena Prado Vasconcelos",
+  "items": [
+    {
+      "name": "bolo de chocolate com morango (tamanho médio)",
+      "quantity": 1,
+      "unit_price": 85.0
+    }
+  ],
+  "delivery_date": "2026-11-13",
+  "address": "Rua das Acácias, 128, apto 32, Vila Mariana, São Paulo",
+  "notes": null
+}

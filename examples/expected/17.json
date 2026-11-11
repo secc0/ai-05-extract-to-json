@@ -1,0 +1,18 @@
+{
+  "customer_name": "Camila Freitas",
+  "items": [
+    {
+      "name": "cupcake de baunilha",
+      "quantity": 12,
+      "unit_price": 4.5
+    },
+    {
+      "name": "cupcake de red velvet",
+      "quantity": 12,
+      "unit_price": 5.5
+    }
+  ],
+  "delivery_date": "2026-11-28",
+  "address": "Rua Harmonia, 300, Sumarezinho, São Paulo",
+  "notes": "É para um aniversário, colocar uma vela"
+}

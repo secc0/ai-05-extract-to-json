@@ -1,0 +1,13 @@
+{
+  "customer_name": "Caio Mendonça",
+  "items": [
+    {
+      "name": "caixa de brigadeiro gourmet (caixa com 12)",
+      "quantity": 4,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": null,
+  "address": "Travessa dos Ipês, 9 - Boa Vista, Recife/PE",
+  "notes": "Dia da entrega a confirmar"
+}

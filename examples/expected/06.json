@@ -1,0 +1,23 @@
+{
+  "customer_name": "Marcelo Antunes",
+  "items": [
+    {
+      "name": "café torrado 500 g",
+      "quantity": 10,
+      "unit_price": 24.9
+    },
+    {
+      "name": "filtro de papel 103",
+      "quantity": 5,
+      "unit_price": 6.5
+    },
+    {
+      "name": "açúcar em sachê (caixa com 1.000 un.)",
+      "quantity": 2,
+      "unit_price": 58.0
+    }
+  ],
+  "delivery_date": "2026-11-25",
+  "address": "Av. Paulista, 2200, 4º andar, Bela Vista, São Paulo - SP",
+  "notes": null
+}

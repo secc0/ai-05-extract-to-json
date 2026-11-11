@@ -1,0 +1,18 @@
+{
+  "customer_name": "Rodrigo Tavares",
+  "items": [
+    {
+      "name": "coxinha",
+      "quantity": 30,
+      "unit_price": null
+    },
+    {
+      "name": "kibe",
+      "quantity": 30,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": "2026-11-20",
+  "address": "Rua Jacarandá 77, Jardim Paulista, Ribeirão Preto",
+  "notes": "Mandar guardanapo junto"
+}

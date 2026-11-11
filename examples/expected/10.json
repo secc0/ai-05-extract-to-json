@@ -1,0 +1,13 @@
+{
+  "customer_name": "Gustavo Henrique Ribas",
+  "items": [
+    {
+      "name": "suco de uva integral",
+      "quantity": 6,
+      "unit_price": 18.0
+    }
+  ],
+  "delivery_date": "2026-11-13",
+  "address": "Alameda Santos, 88, casa 3, Vila Nova, Campinas",
+  "notes": "Tocar o interfone 3"
+}

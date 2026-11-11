@@ -1,0 +1,18 @@
+{
+  "customer_name": "Lúcia Ferraz",
+  "items": [
+    {
+      "name": "pão de queijo",
+      "quantity": 12,
+      "unit_price": null
+    },
+    {
+      "name": "sonho",
+      "quantity": 6,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": "2026-11-12",
+  "address": "Rua Ametista, 45, Jardim das Pedras, Belo Horizonte",
+  "notes": null
+}

@@ -1,0 +1,23 @@
+{
+  "customer_name": "Renata Siqueira",
+  "items": [
+    {
+      "name": "hambúrguer artesanal",
+      "quantity": 2,
+      "unit_price": null
+    },
+    {
+      "name": "porção de batata frita grande",
+      "quantity": 1,
+      "unit_price": null
+    },
+    {
+      "name": "refrigerante lata",
+      "quantity": 2,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": "2026-11-14",
+  "address": "Rua Marechal Deodoro, 1020, bloco B, apto 14, Centro, Juiz de Fora",
+  "notes": "Sem cebola; um hambúrguer cortado ao meio para criança; embalar separado"
+}

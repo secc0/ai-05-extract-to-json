@@ -1,0 +1,18 @@
+{
+  "customer_name": "Bianca Rocha",
+  "items": [
+    {
+      "name": "vaso de orquídea branca",
+      "quantity": 2,
+      "unit_price": null
+    },
+    {
+      "name": "kit de adubo",
+      "quantity": 1,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": null,
+  "address": "Rua dos Girassóis 501, Jardim Botânico, Porto Alegre",
+  "notes": null
+}

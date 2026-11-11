@@ -1,0 +1,13 @@
+{
+  "customer_name": "Edson Barros",
+  "items": [
+    {
+      "name": "garrafão de água de 20 litros",
+      "quantity": 4,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": "2026-11-11",
+  "address": "Rua Siqueira Campos, 1450, sala 12, Centro, Fortaleza",
+  "notes": "Pagamento na entrega"
+}

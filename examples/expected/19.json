@@ -1,0 +1,18 @@
+{
+  "customer_name": "Rafael Antunes Costa",
+  "items": [
+    {
+      "name": "buquê de rosas vermelhas",
+      "quantity": 1,
+      "unit_price": null
+    },
+    {
+      "name": "cartão",
+      "quantity": 1,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": null,
+  "address": null,
+  "notes": "Aniversário da mãe; endereço a confirmar"
+}

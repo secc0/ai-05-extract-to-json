@@ -1,0 +1,13 @@
+{
+  "customer_name": "Sônia Martins Barreto",
+  "items": [
+    {
+      "name": "kit de lanche (sanduíche natural + suco)",
+      "quantity": 50,
+      "unit_price": 16.0
+    }
+  ],
+  "delivery_date": "2026-12-05",
+  "address": "Escola Municipal Recanto Verde, Rua Professor Lima, 400, Santa Cruz, Niterói",
+  "notes": null
+}

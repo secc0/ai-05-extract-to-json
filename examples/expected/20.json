@@ -1,0 +1,23 @@
+{
+  "customer_name": "Joaquim Peixoto",
+  "items": [
+    {
+      "name": "torta salgada de frango",
+      "quantity": 2,
+      "unit_price": null
+    },
+    {
+      "name": "quiche de alho-poró",
+      "quantity": 3,
+      "unit_price": null
+    },
+    {
+      "name": "salada de frutas grande",
+      "quantity": 1,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": "2026-11-13",
+  "address": "Estrada do Capão, km 3, Sítio Boa Esperança, zona rural de Atibaia",
+  "notes": "Ligar ao chegar no portão"
+}

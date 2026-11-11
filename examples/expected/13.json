@@ -1,0 +1,18 @@
+{
+  "customer_name": "Tiago",
+  "items": [
+    {
+      "name": "pacote de ração de 1kg para gato",
+      "quantity": 2,
+      "unit_price": null
+    },
+    {
+      "name": "areia higiênica",
+      "quantity": 1,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": null,
+  "address": "rua Guaraná 12 ap 101, Itapuã, Salvador",
+  "notes": "Sem pressa"
+}

@@ -1,0 +1,13 @@
+{
+  "customer_name": "André Moura",
+  "items": [
+    {
+      "name": "empada de palmito",
+      "quantity": 8,
+      "unit_price": 7.0
+    }
+  ],
+  "delivery_date": "2026-11-12",
+  "address": "Rua Bela Cintra, 640, Consolação, São Paulo",
+  "notes": null
+}

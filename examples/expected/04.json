@@ -1,0 +1,18 @@
+{
+  "customer_name": "Patrícia Gomes",
+  "items": [
+    {
+      "name": "pão de fermentação natural",
+      "quantity": 3,
+      "unit_price": null
+    },
+    {
+      "name": "torta de limão",
+      "quantity": 1,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": "2026-11-14",
+  "address": null,
+  "notes": "Retirada na loja no sábado de manhã"
+}

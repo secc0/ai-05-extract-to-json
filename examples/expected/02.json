@@ -1,0 +1,18 @@
+{
+  "customer_name": "Maria Eduarda Lins",
+  "items": [
+    {
+      "name": "pizza de calabresa",
+      "quantity": 2,
+      "unit_price": 42.0
+    },
+    {
+      "name": "pizza de quatro queijos",
+      "quantity": 1,
+      "unit_price": 48.0
+    }
+  ],
+  "delivery_date": "2026-11-12",
+  "address": "Av. Brasil 1500, casa 2, Centro, Campinas",
+  "notes": null
+}

@@ -1,0 +1,18 @@
+{
+  "customer_name": "Neide Alcantara",
+  "items": [
+    {
+      "name": "bolo de cenoura com cobertura de chocolate",
+      "quantity": 1,
+      "unit_price": null
+    },
+    {
+      "name": "brigadeiro",
+      "quantity": 20,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": "2026-11-16",
+  "address": "rua das palmeras 23 bairo sao jose florianopolis",
+  "notes": null
+}

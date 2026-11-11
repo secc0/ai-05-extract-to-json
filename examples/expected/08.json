@@ -1,0 +1,18 @@
+{
+  "customer_name": "Fábio Nogueira",
+  "items": [
+    {
+      "name": "marmita fit de frango com batata doce",
+      "quantity": 3,
+      "unit_price": null
+    },
+    {
+      "name": "marmita de carne com arroz integral",
+      "quantity": 3,
+      "unit_price": null
+    }
+  ],
+  "delivery_date": "2026-11-16",
+  "address": "Rua Coronel Batista, 310, Fundos, Centro, Curitiba",
+  "notes": null
+}
