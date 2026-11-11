@@ -1,0 +1,12 @@
+# Eval cases: each id maps to examples/<id>.txt (the email) and
+# examples/expected/<id>.json (the hand-labelled order).
+#
+# Relative dates in the emails ("sexta", "amanhã", "dia 5") are labelled against
+# reference_date, which is passed to the extractor as "today".
+reference_date: 2026-11-11
+
+# Subset used by the CI smoke eval (python -m evals.run --smoke).
+smoke: ["01", "02", "06", "13", "16"]
+
+cases: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10",
+        "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
